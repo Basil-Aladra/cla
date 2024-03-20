@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="log_5.js"></script>
+
     <html class="h-full">
         <body dir="rtl" class="dark:bg-slate-900 bg-gray-100 flex h-full items-center py-16">
           <main class="w-full max-w-md mx-auto p-6">
@@ -51,6 +51,21 @@
               </div>
             </div>
           </main>
+            <script>
+                function Calculation(event){
+    event.preventDefault();
+ const num = document.getElementById("number").value;
+    if (num.trim() === '') {
+        alert("يرجى ملء جميع الحقول");
+        return false;
+    }
+
+ const sum = parseInt(num) + 5 ;
+ document.getElementById("res").innerHTML = "الناتج = " + num;
+
+ return true;
+}
+            </script>
         </body>
       </html>
 </body>
